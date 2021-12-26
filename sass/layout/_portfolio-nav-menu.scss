@@ -1,0 +1,45 @@
+.portfolio-nav__menu {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-left: -8px;
+}
+
+.portfolio-nav__item {
+    margin-left: 8px;
+}
+
+.portfolio-nav__btn {
+    display: flex;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background-color:#F5F4FA;
+    letter-spacing: 0.03em;
+    color: var(--portfolio-btn-color);
+    padding: 6px 22px 6px 22px;
+    border: none;
+    border-style: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+        color:#FFFFFF;
+        box-shadow: 
+            0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    
+}
+
+.portfolio-nav__btn:active, .portfolio-nav__btn:focus {
+    outline: none;
+}
+
