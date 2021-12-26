@@ -107,7 +107,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -318,6 +318,11 @@ body {
   .container {
     width: 480px;
   }
+}
+
+.section {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -806,7 +811,7 @@ body {
 
 .hero {
   background-color: var(--background-heroe-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -817,15 +822,22 @@ body {
   margin-right: auto;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../);
+  }
+}
+
 .hero__container {
   text-align: center;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #FFFFFF;
   display: block;
   text-align: center;
@@ -888,6 +900,12 @@ body {
 
 .about {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
 .about__title {
@@ -1003,17 +1021,22 @@ body {
 }
 
 .client__item {
-  flex-basis: calc((100% - 30px) / 2);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
-.client__item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
-}
-
-.client__item:nth-child(2n) {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .client__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .client__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .client__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .client__link {
