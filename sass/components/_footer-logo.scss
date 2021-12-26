@@ -14,10 +14,11 @@
 }
 
 .logo__studio--color-light {
+    @include font (700, 24px, 1.17, 0.03em);
     color: #FFFFFF;
     font-family: Raleway;
-    font-size: 26px;
-    line-height: 1.19;
-    font-weight: 700;
-    letter-spacing: 0.03em
+//     font-size: 26px;
+//     line-height: 1.19;
+//     font-weight: 700;
+//     letter-spacing: 0.03em
 }
