@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Шапка -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="header__navigation">
                 <a class="link logo header__logo " href="index.html">
@@ -60,9 +60,77 @@
                 </a
             ></li> 
         </ul>
+        <button type="button" class="header__open-mob-menu-btn">
+            <svg
+            width="40"
+            height="40"
+            class="header__icon-open-mob-menu">
+                <use href="./images/icons.svg#icon-menu_mob"></use>
+            </svg>
+        </button>
+        </div>
+        <!-- MOB-MENU -->
+        <div class="mob-menu is-hidden">
+            <div class="container mob-menu__container">
+                <div class="mob-menu__nav-wrap">
+                    <button type="button" class="close-mob-menu-btn"> 
+                        <svg
+                        width="40"
+                        height="40"
+                        class="mob-menu__close-icon">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="list mob-menu__list">
+                        <li class="mob-menu__item">
+                            <a class="link mob-menu__link mob-menu__link--current" href="">
+                                Студия
+                            </a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="link mob-menu__link" href="portfolio.html">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="link mob-menu__link" href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu-contacts-wrap">
+                        <ul class="list mob-menu__contacts-list">
+                            <li class="mob-menu__tel-item">
+                                <a class="link mob-menu__link-tel" href="tel:+380961111111">
+                                +38 096 111 11 11
+                                </a>
+                            </li> 
+                            <li class="mob-menu__mail-item">
+                                <a class="link mob-menu__link-mail" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                    <div class="mob-menu__social">
+                        <ul class="mob-menu__social-list">
+                            <li class="list mob-menu__social-item">
+                                <a href="" class="link mob-menu__social-link">Instagram</a>    
+                            </li>
+                            <li class="list mob-menu__social-item">
+                                <a href="" class="link mob-menu__social-link">Twitter</a>
+                            </li>
+                            <li class="list mob-menu__social-item"><a href="" class="link mob-menu__social-link">Facebook</a>
+                            </li>
+                            <li class="list mob-menu__social-item"><a href="" class="link mob-menu__social-link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-    <main> -->
+    <main>
 <!-- ГЕРОЙ -->
         <section class="hero ">
             <div class="container hero__container">
@@ -195,7 +263,7 @@
                                     media="(min-width: 480px)"
                                     >
                                     <img 
-                                    src="./images/descktop-img/team-card-1dt-1x.jpg" 
+                                    src="./images/mobile-img/team-card-1mob-1x.jpg" 
                                     alt="сотрудник Игорь Демьяненко "
                                 >
                             </picture>
@@ -266,7 +334,7 @@
                                     media="(min-width: 480px)"
                                     >
                                     <img 
-                                    src="./images/descktop-img/team-card-2dt-1x.jpg"
+                                    src="./images/mobile-img/team-card-2mob-1x.jpg"
                                     alt="сотрудник Ольга Репина"
                                 >
                             </picture>
@@ -337,7 +405,7 @@
                                     media="(min-width: 480px)"
                                     >
                                     <img 
-                                    src="./images/descktop-img/team-card-3dt-1x.jpg"
+                                    src="./images/mobile-img/team-card-3mob-1x.jpg"
                                     alt="сотрудник Николай Тарасов"
                                 >
                             </picture>
@@ -408,7 +476,7 @@
                                     media="(min-width: 480px)"
                                     >
                                     <img 
-                                    src="./images/descktop-img/team-card-4dt-1x.jpg" 
+                                    src="./images/mobile-img/team-card-4mob-1x.jpg" 
                                     alt="сотрудник Михаил Ермаков"
                                 >
                             </picture>
@@ -700,6 +768,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/model.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html> 

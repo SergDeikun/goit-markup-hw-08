@@ -1,11 +1,19 @@
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header__container {
     display: flex;
     align-items: center;
+}
+
+.header__open-mob-menu-btn {
+    margin-left: auto;
+    border: none;
+    background-color: #FFFFFF;
 }
 
 
