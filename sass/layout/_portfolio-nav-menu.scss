@@ -1,11 +1,10 @@
 .portfolio-nav__menu {
     display: flex;
     flex-wrap: wrap;
-    
+
     @media screen and (min-width: 768px) {
         justify-content: center;
     }
-    
     margin-left: -8px;
     margin-bottom: -15px;
 }

@@ -42,6 +42,7 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    overflow: scroll;
 }
 
 .backdrop.is-hidden{

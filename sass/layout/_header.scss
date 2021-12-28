@@ -17,5 +17,13 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+    
 }
 
+.header__icon-open-mob-menu {
+    .header__open-mob-menu-btn:hover &, 
+    .header__open-mob-menu-btn:hover & {
+        fill: var(--hover-color);
+    }
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
