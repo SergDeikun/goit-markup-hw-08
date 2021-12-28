@@ -16,7 +16,7 @@
     <header class="header">
         <div class="container header__container">
             <nav class="header__navigation">
-                <a class="link logo header__logo " href="index.html">
+                <a class="link logo header__logo" href="index.html">
                     Web
                     <span class="logo__studio">Studio</span>
                 </a>
@@ -196,11 +196,19 @@
             <ul class="list about__list">
                 <li class="about__item">
                     <div class="about__item-wrap">
-                        <img 
-                        src="./images/descktop-img/about-img-1.jpg"
-                        alt="разработка макета"
-                        width="370"
-                        height="294">
+                        <picture>
+                            <source 
+                                srcset="
+                                ./images/descktop-img/about-1dt-1x.jpg 1x,
+                                ./images/descktop-img/about-1dt-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <img 
+                                src="./images/descktop-img/about-1dt-1x.jpg"
+                                alt="разработка макета"
+                            >
+                        </picture>
                         <div class="about__text-wrap">
                             <p class="about__text">Десктопные приложения</p>
                         </div>
@@ -209,11 +217,19 @@
                 </li>
                 <li class="about__item">
                     <div class="about__item-wrap">
-                        <img 
-                        src="./images/descktop-img/about-img-2.jpg" 
-                        alt="адаптация"
-                        width="370"
-                        height="294">
+                        <picture>
+                            <source 
+                                srcset="
+                                ./images/descktop-img/about-2dt-1x.jpg 1x,
+                                ./images/descktop-img/about-2dt-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <img 
+                                src="./images/descktop-img/about-2dt-1x.jpg" 
+                                alt="адаптация"
+                            >
+                        </picture>
                         <div class="about__text-wrap">
                             <p class="about__text">Мобильные приложения</p>
                         </div>
@@ -221,11 +237,19 @@
                 </li> 
                 <li class="about__item">
                     <div class="about__item-wrap">
-                        <img 
-                        src="./images/descktop-img/about-img-3.jpg" 
-                        alt="дизайн"
-                        width="370"
-                        height="294">
+                        <picture>
+                            <source 
+                                srcset="
+                                ./images/descktop-img/about-3dt-1x.jpg 1x,
+                                ./images/descktop-img/about-3dt-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <img 
+                                src="./images/descktop-img/about-3dt-1x.jpg" 
+                                alt="дизайн"
+                            >
+                        </picture>
                         <div class="about__text-wrap">
                             <p class="about__text">Дизайнерские решения</p>
                         </div>
@@ -247,25 +271,25 @@
                                     ./images/descktop-img/team-card-1dt-2x.jpg 2x
                                     "
                                     media="(min-width: 1200px)"
-                                    >
+                                >
                                 <source 
                                 srcset="
                                     ./images/tablet-img/team-card-1tab-1x.jpg 1x,
                                     ./images/tablet-img/team-card-1tab-2x.jpg 2x
                                     "
                                     media="(min-width: 768px)"
-                                    >
+                                >
                                 <source 
                                 srcset="
                                     ./images/mobile-img/team-card-1mob-1x.jpg 1x,
                                     ./images/mobile-img/team-card-1mob-2x.jpg 2x
                                     "
                                     media="(min-width: 480px)"
-                                    >
-                                    <img 
-                                    src="./images/mobile-img/team-card-1mob-1x.jpg" 
-                                    alt="сотрудник Игорь Демьяненко "
                                 >
+                                    <img 
+                                        src="./images/mobile-img/team-card-1mob-1x.jpg" 
+                                        alt="сотрудник Игорь Демьяненко "
+                                    >
                             </picture>
                             <div class="team__item-wrap">
                                 <h3 class="team__item-title">Игорь Демьяненко</h3>
@@ -318,7 +342,7 @@
                                     ./images/descktop-img/team-card-2dt-2x.jpg 2x
                                     "
                                     media="(min-width: 1200px)"
-                                    >
+                                >
                                 <source 
                                 srcset="
                                     ./images/tablet-img/team-card-2tab-1x.jpg 1x,
@@ -455,30 +479,30 @@
                         <li class="team__item">
                             <picture>
                                 <source 
-                                srcset="
-                                    ./images/descktop-img/team-card-4dt-1x.jpg 1x,
-                                    ./images/descktop-img/team-card-4dt-2x.jpg 2x
-                                    "
+                                    srcset="
+                                        ./images/descktop-img/team-card-4dt-1x.jpg 1x,
+                                        ./images/descktop-img/team-card-4dt-2x.jpg 2x
+                                        "
                                     media="(min-width: 1200px)"
-                                    >
-                                <source 
-                                srcset="
-                                    ./images/tablet-img/team-card-4tab-1x.jpg 1x,
-                                    ./images/tablet-img/team-card-4tab-2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    >
-                                <source 
-                                srcset="
-                                    ./images/mobile-img/team-card-4mob-1x.jpg 1x,
-                                    ./images/mobile-img/team-card-4mob-2x.jpg 2x
-                                    "
-                                    media="(min-width: 480px)"
-                                    >
-                                    <img 
-                                    src="./images/mobile-img/team-card-4mob-1x.jpg" 
-                                    alt="сотрудник Михаил Ермаков"
                                 >
+                                <source 
+                                    srcset="
+                                        ./images/tablet-img/team-card-4tab-1x.jpg 1x,
+                                        ./images/tablet-img/team-card-4tab-2x.jpg 2x
+                                        "
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                        ./images/mobile-img/team-card-4mob-1x.jpg 1x,
+                                        ./images/mobile-img/team-card-4mob-2x.jpg 2x
+                                        "
+                                    media="(min-width: 480px)"
+                                >
+                                    <img 
+                                        src="./images/mobile-img/team-card-4mob-1x.jpg" 
+                                        alt="сотрудник Михаил Ермаков"
+                                    >
                             </picture>
                             <div class="team__item-wrap">
                                 <h3 class="team__item-title">Михаил Ермаков</h3>
@@ -592,11 +616,12 @@
     <!-- футер -->
         <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__contacts">
-                <a class="link logo footer__logo" href="index.html">
-                    Web
-                    <span class="logo__studio--color-light">Studio</span>
-                </a>
+            <div class="footer__tab-wrap">
+                <div class="footer__contacts">
+                    <a class="link logo footer__logo" href="index.html">
+                        Web
+                        <span class="logo__studio--color-light">Studio</span>
+                    </a>
                     <address class="footer-address">
                         <ul class="list footer-address__list">
                             <li class="footer-adress__item">
@@ -609,8 +634,8 @@
                                 <a class="link footer-adress__tel" href="tel:+380961111111">+38 096 111 11 11</a>
                             </li>
                         </ul>
-                </address>
-            </div>
+                    </address>
+                </div>
                 <div class="footer-social-wrap">    
                     <h3 class="footer-social-wrap__title">присоединяйтесь</h3>
                     <ul class="list social-list">
@@ -652,6 +677,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
                 <div class="footer-form">
                     <p class="footer-form__title">Подпишитесь на рассылку</p>
                     <form action="#" class="footer-form__send">
