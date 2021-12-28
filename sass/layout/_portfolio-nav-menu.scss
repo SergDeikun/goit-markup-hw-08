@@ -5,6 +5,7 @@
     @media screen and (min-width: 768px) {
         justify-content: center;
     }
+
     margin-left: -8px;
     margin-bottom: -15px;
 }
@@ -17,11 +18,8 @@
 .portfolio-nav__btn {
     display: flex;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+    @include font (500, 16px, 1.62, 0.03em);
     background-color:#F5F4FA;
-    letter-spacing: 0.03em;
     color: var(--portfolio-btn-color);
     padding: 6px 22px 6px 22px;
     border: none;

@@ -693,8 +693,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
   margin-bottom: 12px;
 }
@@ -781,12 +781,13 @@ body {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: #FFFFFF;
   cursor: pointer;
   margin: 30px auto;
@@ -1080,6 +1081,7 @@ body {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/descktop-img/hero-dt-1x.jpg);
   }
 }
@@ -1122,11 +1124,11 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  background-color: #2196F3;
   letter-spacing: 0.06em;
+  background-color: #2196F3;
   color: #FFFFFF;
   min-width: 200px;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
@@ -1143,18 +1145,17 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .properties__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .properties__list {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .properties__list {
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -1167,7 +1168,6 @@ body {
 }
 
 .properties-icons__wrap {
-  width: 270px;
   width: 100%;
   height: 120px;
   display: flex;
@@ -1216,7 +1216,7 @@ body {
 }
 
 .about__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -1283,13 +1283,18 @@ body {
 }
 
 .team__item {
-  margin-bottom: 30px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .team__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
@@ -1299,7 +1304,6 @@ body {
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc(100% / 4 - 30px);
-    margin-right: 30px;
   }
 }
 
@@ -1357,12 +1361,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .client__list {
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 479px) {
   .client__item {
     margin: auto;
@@ -1380,15 +1378,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .client__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
     flex-basis: calc(100% / 3 - 30px);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client__item {
-    margin-right: 30px;
   }
 }
 
@@ -1428,6 +1418,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__container {
+    align-items: baseline;
     display: flex;
   }
 }
@@ -1435,17 +1426,13 @@ body {
 @media screen and (min-width: 768px) {
   .footer__tab-wrap {
     display: flex;
-    justify-content: center;
   }
-}
-
-.footer__contacts {
-  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1199px) {
   .footer__contacts {
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -1596,6 +1583,7 @@ body {
 .footer-form__input::placeholder {
   display: flex;
   align-items: center;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -1649,8 +1637,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  background-color: #F5F4FA;
   letter-spacing: 0.03em;
+  background-color: #F5F4FA;
   color: var(--portfolio-btn-color);
   padding: 6px 22px 6px 22px;
   border: none;

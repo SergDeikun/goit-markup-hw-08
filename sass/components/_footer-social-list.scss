@@ -1,33 +1,14 @@
 .footer-social-wrap {
     text-align: center;
     margin-bottom: 60px;
-    // justify-content: center; 
-    
 }
 
 .footer-social-wrap__title {
-    // display: flex;
     @include font (700, 14px, 1.14, 0.03em);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
-
-// .footer-social-list {
-//     display: flex;
-//     justify-content: center;
-//     margin-right: -10px;
-// }
-
-// .social-list-item {
-//     width: 44px;
-//     height: 44px;
-//     margin-right: 10px;
-// }
 
 .social-list__link--background-darck {
     width: 100%;

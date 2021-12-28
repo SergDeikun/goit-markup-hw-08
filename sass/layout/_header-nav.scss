@@ -5,9 +5,11 @@
 
 .header-nav__list {
     display: none;
+
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
     align-items: center;
 }
 
@@ -19,10 +21,7 @@
 .header-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font (500, 14px, 1.14, 0.02em);
     color: #212121;
     position: relative;
     display: flex;
