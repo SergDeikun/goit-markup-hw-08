@@ -1459,6 +1459,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer__tab-wrap {
+    align-items: baseline;
     display: flex;
     justify-content: center;
   }
