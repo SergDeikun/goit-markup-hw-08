@@ -6,14 +6,22 @@
 
 .modal-form__check-input {
     margin-top: 20px;
+    text-align: center;
 }
 
 .modal-form__check-text {
     font-weight: 400;
-    font-size: 10px;
 
     @media screen and (max-width: 479px) {
+        flex-wrap: wrap;
+        font-size: 10px;
+        // text-align: center;
+    }
+
+    @media screen and (min-width: 480px) {
+        
         font-size: 12px;
+        // text-align: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -25,6 +33,10 @@
     color: #757575;
     display: flex;
     align-items: center;
+}
+
+.modal-form__link-check-text {
+    margin-left: 26px;
 }
 
 .modal-form__custom-check {

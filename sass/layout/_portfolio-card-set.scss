@@ -65,18 +65,21 @@
 
 .portfolio-card__overflow {
     height: 100%;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+    width: 100%;
+    
+    @include font (400, 18px, 1.58, 0.03em);
     background-color: #2196F3E5;
+    @media screen and(max-width: 479px) {
+        padding: 16px 14px;
+        font-size: 14px;
+    }
     padding: 77px 24px;
 
     @media screen and(min-width: 768px) {
         padding: 49px 24px;
     }
 
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 1200px) {
         padding: 63px 24px;
     }
 
