@@ -36,7 +36,10 @@
 }
 
 .modal-form__link-check-text {
-    margin-left: 26px;
+    @media screen and (max-width: 479px) {
+        margin-left: 26px;
+    }
+    
 }
 
 .modal-form__custom-check {
