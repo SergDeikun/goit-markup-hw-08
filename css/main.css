@@ -1063,7 +1063,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1210,7 +1210,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .properties__item {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -1342,14 +1342,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .team__item {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
@@ -1412,16 +1412,16 @@ body {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .client__item {
-    flex-basis: calc(100% / 2 - 60px);
+    flex-basis: calc((100% - 60px) / 2);
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__item {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -1751,14 +1751,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .portfolio-card {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-card {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
