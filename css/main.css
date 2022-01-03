@@ -471,16 +471,6 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 479px) {
-  .mob-menu__social-item:not(:last-child)::after {
-    content: "";
-    height: 22px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-}
-
 .mob-menu__social-link {
   font-weight: 500;
   font-size: 18px;
@@ -1415,7 +1405,6 @@ body {
 @media screen and (max-width: 767px) {
   .client__item {
     flex-basis: calc((100% - 60px) / 2);
-    margin-bottom: 30px;
   }
 }
 
@@ -1669,18 +1658,20 @@ body {
 .portfolio-nav__menu {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
   margin-left: -8px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-nav__menu {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .portfolio-nav__menu {
-    margin-bottom: -15px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1722,24 +1713,13 @@ body {
   outline: none;
 }
 
-.card-set {
-  margin-top: 40px;
-}
-
 @media screen and (min-width: 768px) {
   .card-set {
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     margin-bottom: -30px;
     margin-right: -30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .card-set {
-    margin-top: 50px;
   }
 }
 
@@ -1795,13 +1775,27 @@ body {
   line-height: 1.58;
   letter-spacing: 0.03em;
   background-color: #2196F3E5;
-  padding: 16px 14px;
+  width: 100%;
   color: #FFFFFF;
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio-card__overflow {
+    padding: 16px 16px;
+    font-size: 14px;
+    height: 101%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-card__overflow {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
