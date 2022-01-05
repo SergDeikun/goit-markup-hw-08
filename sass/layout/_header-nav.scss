@@ -30,18 +30,25 @@
     &:focus {
         color: var(--hover-color);
     }
-    &--current::after {
-        content: "";
-        height:4px;
-        width: 100%;
-        background-color: #2196F3;
-        border-radius: 2px;
-        display: block;
-        position: absolute;
-        left: 0;
+}
+
+.header-nav__link--current::after {
+    content: "";
+    height:4px;
+    width: 100%;
+    background-color: #2196F3;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+
+    @media screen and (min-width: 1200px) {
         bottom: -1px;
     }
-}
+} 
+
+
 
 .header-nav__link:active, 
 .header-nav__link:focus {
